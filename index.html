@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chat-container">
+
+    <!-- All chat messages -->
+    <div class="messages" id="messages"></div>
+
+    <!-- 🔥 Typing indicator (NEW) -->
+    <div id="typing"></div>
+
+    <!-- Message input -->
+    <form id="form">
+      <input id="input" placeholder="Type message..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+
+  </div>
+
+  <!-- Socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- Your script -->
+  <script src="script.js"></script>
+
+  <!-- 🔥 Sound Notification (NEW) -->
+  <audio id="notifySound" src="notify.mp3" preload="auto"></audio>
+
+</body>
+</html>
